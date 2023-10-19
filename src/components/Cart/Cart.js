@@ -28,7 +28,7 @@ const Cart = (props) => {
     </ul>
   );
 
-  const totalAmount = `$${useCtx.totalAmount}`;
+  const totalAmount = `$${useCtx.totalAmount.toFixed(2)}`;
   return (
     <Modal onClose={props.onClose}>
       {cartItems}
